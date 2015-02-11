@@ -1,0 +1,11 @@
+{:roles [:mix :exit :entry :app-proxy]
+ :herd-conn {:host "127.0.0.1"
+             :port 6669}
+ :app-proxy-conn {:host "127.0.0.1"
+                  :port 6666}
+ :auth {:openssl {:cert "auth/public/cert.pem"
+                  :key  "auth/secret/key.pem"
+                  :passphrase "1234"}
+        :herd-id {:pub "auth/public/pub.ntor"
+		  :id  "auth/public/id.ntor"
+                  :sec "auth/secret/sec.ntor"}}}
